@@ -35,9 +35,9 @@ else:
 #The new position is the old position plus the increment.
 alien_0['x_position'] = alien_0['x_position'] + x_increment
 
-print(f"New position: {alien_0['x_position']}")'''
+print(f"New position: {alien_0['x_position']}")
 
-'''alien_0 = {'color': 'green', 'points': 5}
+alien_0 = {'color': 'green', 'points': 5}
 print(alien_0)
 
 del alien_0['points']
@@ -55,9 +55,3 @@ alien_0 = {'color': 'green', 'speed': 'slow'}
 #print(alien_0['points'])
 point_value = alien_0.get('points', 'No point value assigned.')
 print(point_value)
-
-
-
-
-
-
