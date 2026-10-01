@@ -32,3 +32,38 @@ changed["tags"].append("debugging")
 
 assert original["tags"] == ["python"]
 print(changed["tags"])
+
+def summarise_amounts(raw_values):
+    total = 0
+    rejection = 0
+    for raw in raw_values:
+        try: 
+            amount = int(raw)
+        except ValueError:
+            rejected += 1
+            continue
+        if amount >= 0:
+            total += amount
+        else:
+            reject += 1
+    return {"total": total, "rejected": rejected}
+#print(summarise_amounts["10", " 5 ", "bad", "-3", "0", ""])
+
+def reserve_stock(stock, order):
+    remaining = stock.copy()
+
+    for item, quantity in order:
+
+        if item not in remaining:
+            raise ValueError("Unknown item")
+
+        if quantity <= 0:
+            raise ValueError("Quantity must be positive")
+
+        if quantity > stock[item]:
+            raise ValueError("Insufficient stock")
+
+            remaining[item] -= quantity
+    return remaining
+
+
