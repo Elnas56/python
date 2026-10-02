@@ -32,3 +32,25 @@ def describe_pet(animal_type, pet_name):
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
 describe_pet('harry', 'hamster')
+describe_pet(pet_name='harry', animal_type='hamster')
+
+def make_shirt(size, message):
+    print("The shirt of the size " + size  + " and has the message " + message + " printed.")
+make_shirt('Large', 'I love Python')
+make_shirt(size='Medium', message='Python is fun')
+
+def make_shirt(size='Large', message='I love Python'):
+    print("The shirt of the size " + size + " and has the message " + message + " printed on it.")
+make_shirt()
+make_shirt(size='medium')
+make_shirt(size='small', message='Python is intresting')
+
+
+def describe_city(city, country='iceland'):
+    print(city.title() + " is in " + country.title())
+describe_city('reykjavik')
+describe_city('abuja', 'nigeria')
+describe_city('Paris', 'France')
+
+def order_food('JollofRice', '2', Large)
+
