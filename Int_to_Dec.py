@@ -7,7 +7,6 @@ from decimal import Decimal
 number = Decimal(0.1)
 print(number)
 
-
 from decimal import Decimal
 number = Decimal("0.1")
 print(number)

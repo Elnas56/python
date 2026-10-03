@@ -52,5 +52,14 @@ describe_city('reykjavik')
 describe_city('abuja', 'nigeria')
 describe_city('Paris', 'France')
 
-def order_food('JollofRice', '2', Large)
+def order_food(food, quantity, size):
+    print(f"You ordered {quantity} {size} portions of {food}.")
+order_food('jollof Rice', '2', 'large')
 
+def order_food(food='Jollof Rice', quantity='3', size='medium'):
+    print(f"You ordered {quantity} {size} portions of {food}.")
+order_food()
+
+def ready_food(customer_name, food, quantity):
+    print(f"{customer_name} ordered {quantity} portions of {food}.")
+ready_food('Joy', 'beans', '2')
