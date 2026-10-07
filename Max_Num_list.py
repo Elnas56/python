@@ -14,7 +14,7 @@ print(largest)
 
 property_prices = [25000000, 45000000, 18000000, 70000000, 35000000]
 largest = property_prices[0]
-for property_price in property_prices:
-    if largest < property_price:
-        largest = property_price
-print(property_price)        
+for num in property_prices:
+    if largest < num:
+        largest = num
+print(largest)        
