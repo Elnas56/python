@@ -85,3 +85,33 @@ for property in properties:
 
 print(f"Total matching properties: {count}")
 
+#1. What prints on each line?
+#2. What is the final value of count?
+#3. Why does the first line print 0?
+count = 0
+
+for number in [10, 20, 30]:
+    if number > 10:
+        count = count + 1
+
+    print(count)
+
+#What will print, and what will the final value of count be?
+count = 0
+
+for number in [10, 20, 30]:
+    if number > 10:
+        count = count + 1
+        print(number)
+
+#1. Which numbers will print inside the loop?
+#2. How many times will the while loop run?
+#3. What is the complete output, including "Finished"?
+count = 1
+
+while count <= 4:
+    if count % 2 == 0:
+        print(count)
+    count = count + 1
+
+print("Finished")
